@@ -75,6 +75,11 @@ The latest homepage direction supersedes the earlier multi-section concept: a mi
 
 ## 4. Minimal desktop homepage and clothing rail
 
+- [x] Import the available Stitch source assets without implementing the UI.
+  - [x] Separate garment images in `public/images/products/` from common brand assets in `public/images/shared/logos/`.
+  - [x] Save nine garment images (including one out-of-scope trousers reference), three raster logo references, and four original SVGs.
+  - [x] Verify image decoding, SVG XML/safety, file hashes, dimensions, and visual mapping; document sources in `docs/asset-manifest.json` and limits in `docs/assets.md`.
+  - [ ] Prepare matching front/side cutouts for missing garment views and a sharp vector wordmark before final rail integration.
 - [ ] Build the approved desktop homepage.
   - [ ] Near-single-viewport composition with generous empty space.
   - [ ] Compact header, tagline, subtle interaction guidance, and minimal footer.
@@ -322,11 +327,12 @@ Separate native Android/iPhone apps, a multi-brand marketplace, and internationa
 
 ## Progress log
 
-| Date       | Completed work                                                                                                                        | Validation / limits                                                                                                                          |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2026-11-11 | Established tracker; moved PRD, database design, and API design into `docs/`                                                          | Documentation only. Existing relative document links preserved. Application code and integrations have not been implemented.                 |
-| 2026-11-11 | Created Next.js scaffold, feature boundaries, placeholder routes, shared layout, server-only DB helper, API helpers, and test tooling | Lint and typecheck passed; 3 validation tests and 2 Playwright smoke tests passed; production build passed. Integrations remain unconnected. |
-| 2026-11-11 | Documented development batches of two or three steps and explicit user checkpoints in AGENTS.md                                       | Documentation only; no application features changed.                                                                                         |
+| Date       | Completed work                                                                                                                        | Validation / limits                                                                                                                            |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-11-11 | Established tracker; moved PRD, database design, and API design into `docs/`                                                          | Documentation only. Existing relative document links preserved. Application code and integrations have not been implemented.                   |
+| 2026-11-11 | Created Next.js scaffold, feature boundaries, placeholder routes, shared layout, server-only DB helper, API helpers, and test tooling | Lint and typecheck passed; 3 validation tests and 2 Playwright smoke tests passed; production build passed. Integrations remain unconnected.   |
+| 2026-11-11 | Documented development batches of two or three steps and explicit user checkpoints in AGENTS.md                                       | Documentation only; no application features changed.                                                                                           |
+| 2026-11-11 | Imported Stitch garment images, raster logo references, and original SVG assets into separate public folders                          | All 16 files decode; SVGs parse and contain no scripts/external links. Visually reviewed; source/hash/dimension manifest saved. No UI changes. |
 
 ## Scaffold verification notes
 
@@ -334,7 +340,7 @@ Separate native Android/iPhone apps, a multi-brand marketplace, and internationa
 - Shared layout and placeholder routes work without credentials. Only the health endpoint is implemented; auth/commerce/webhook/job API folders are reserved, not functioning endpoints.
 - Theme tokens exist; switching/persistence and accessible dialog primitives remain pending.
 - MongoDB helper is server-only and lazy; no Atlas connection or migrations have been performed.
-- The homepage is a temporary shell, not the clothing-rail implementation. No garment assets or fake working login/payment controls were added.
+- The homepage is a temporary shell, not the clothing-rail implementation. Garment and logo assets are now imported separately; no fake working login/payment controls were added.
 - Dependency audit reports moderate findings in development lint tooling; no forced incompatible overrides were applied. Revisit when compatible upstream fixes are available.
 
 - Verification complete: lint, typecheck, production build, three unit tests, and two Chromium smoke tests passed. Production dependency audit found zero vulnerabilities; development lint-tooling findings remain documented.
