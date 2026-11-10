@@ -11,6 +11,7 @@
 - Record meaningful milestones in the progress log with validation and any remaining limits.
 - Do not mark integrations complete because a placeholder, mocked response, or environment variable exists. Label simulations clearly.
 - Keep deferred work separate from version 1. Unchecked design/tooling proposals are not finalized implementation decisions.
+- Work in batches of at most two or three concrete steps. State the batch first, verify and report its results, then wait for the user's explicit go-ahead before the next batch. See `AGENTS.md` for the full checkpoint and branch rules.
 
 ## Scope and source documents
 
@@ -42,6 +43,7 @@ The latest homepage direction supersedes the earlier multi-section concept: a mi
 
 - [x] Initialize Git on `main` and configure `origin` as `https://github.com/Jatingupta-2/off-hour.git`.
 - [x] Establish `dev` integration branch and document feature/fix/chore branch workflow in `AGENTS.md`.
+- [x] Document incremental development batches and mandatory user checkpoints after two or three steps.
 - [ ] Add automated CI and GitHub branch protection if requested; the branch workflow is currently procedural.
 - [ ] Create the Next.js App Router and TypeScript scaffold.
   - [x] Initialize runnable app, lockfile, shared layout, and placeholder pages.
@@ -324,6 +326,7 @@ Separate native Android/iPhone apps, a multi-brand marketplace, and internationa
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | 2026-11-11 | Established tracker; moved PRD, database design, and API design into `docs/`                                                          | Documentation only. Existing relative document links preserved. Application code and integrations have not been implemented.                 |
 | 2026-11-11 | Created Next.js scaffold, feature boundaries, placeholder routes, shared layout, server-only DB helper, API helpers, and test tooling | Lint and typecheck passed; 3 validation tests and 2 Playwright smoke tests passed; production build passed. Integrations remain unconnected. |
+| 2026-11-11 | Documented development batches of two or three steps and explicit user checkpoints in AGENTS.md                                       | Documentation only; no application features changed.                                                                                         |
 
 ## Scaffold verification notes
 
