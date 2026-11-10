@@ -41,6 +41,8 @@ The latest homepage direction supersedes the earlier multi-section concept: a mi
 ## 2. Application foundation
 
 - [x] Initialize Git on `main` and configure `origin` as `https://github.com/Jatingupta-2/off-hour.git`.
+- [x] Establish `dev` integration branch and document feature/fix/chore branch workflow in `AGENTS.md`.
+- [ ] Add automated CI and GitHub branch protection if requested; the branch workflow is currently procedural.
 - [ ] Create the Next.js App Router and TypeScript scaffold.
   - [x] Initialize runnable app, lockfile, shared layout, and placeholder pages.
   - [x] Add lazy validated database configuration and `.env.example`; integration-specific validation remains pending.
