@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --background: #e9e7e3;
+  --foreground: #262724;
+  --muted: #62635e;
+  --surface: #f1efeb;
+  --border: #c8c6c0;
+}
+
+[data-theme="white"] {
+  --background: #faf9f6;
+  --surface: #f0efeb;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #232421;
+  --foreground: #f0efea;
+  --muted: #babbb3;
+  --surface: #2c2d29;
+  --border: #50514b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+::selection {
+  background: var(--foreground);
+  color: var(--background);
+}
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 5px;
+}
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -5rem;
+  z-index: 50;
+  padding: 0.75rem;
+  background: var(--foreground);
+  color: var(--background);
+}
+.skip-link:focus {
+  top: 1rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

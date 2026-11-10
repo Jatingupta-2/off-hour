@@ -1,0 +1,10 @@
+node_modules
+.next
+package-lock.json
+next-env.d.ts
+coverage
+test-results
+playwright-report
+docs/OFFHOUR-PRD.md
+docs/OFFHOUR-DATABASE-DESIGN.md
+docs/OFFHOUR-API-DESIGN.md
