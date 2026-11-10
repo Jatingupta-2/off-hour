@@ -1,0 +1,178 @@
+{
+  "projectUrl": "https://stitch.google.com/projects/1272478663952991774",
+  "importedAt": "2026-11-11",
+  "files": [
+    {
+      "path": "public/images/products/linen-shirt-bone-side.jpg",
+      "sourceUrl": "https://lh3.googleusercontent.com/aida/ALJJyrBc9rPrmnS8_OsP2gpwW-w66cfoT8ptOXjsv78VmS-2BBRuKL4NZz6S_Ij8OanimQyorC6nYngGWQkBAhCvDkQi5go8XU858GLBhRUauAu32VuhEhhjGmTIAI-3jrSEau0pHtrF7lNeczDPd7IiD-9kOvdnm9joju6D9e6vPyBkKeN_Mb1jRzAMuDpu4zKKTNBcprUwU_KsXC7E791l3rV3NopIMEqDkda2gCGMq6CYJcjKK05Y5LHP8LE=s600",
+      "kind": "product-image",
+      "bytes": 24267,
+      "sha256": "0edef23d102f0ec7f627ba2016d80cf78a3fdb5565dd3fb792c36921d43034b1",
+      "contentType": "image/jpeg",
+      "width": 448,
+      "height": 600
+    },
+    {
+      "path": "public/images/shared/logos/offhour-wordmark-reference.png",
+      "sourceUrl": "https://lh3.googleusercontent.com/aida/ALJJyrDpDSHExHrDXNzOJhONaEicaTw0KJRY7Hz6SxaIJHloxdIAiw_6VgFI-vMbzDg4G25ZJfaJqq_RncwmyGCSfUiYtZvd4_T0YqnscVzmI4HmRP2Aa2NffiMXmeRQAkwkupoZgryUs__QZxjkeBCNv2joQSh5Zc_-8md8OA8tJyEzukFeEPdJU2P2EvW8urQTNZduOQ-Ehqt8svdRkFkmfFVo6fWsRWAtP4cRp9D-zLvNuzguJAB0E2pftLU=s50",
+      "kind": "logo-reference",
+      "bytes": 770,
+      "sha256": "ca2092c5ddb96173d56da083717487d429685b218fa17ca8c32f04a3ba5eb4c2",
+      "contentType": "image/png",
+      "width": 50,
+      "height": 50
+    },
+    {
+      "path": "public/images/products/oversized-tee-chalk-front.jpg",
+      "sourceUrl": "https://lh3.googleusercontent.com/aida/ALJJyrCCpiqK3M6Rv0tzVRgiDe6Deo2QUPEX8gDk7OrCRi_C-h2CWaGuJYaFxPmoGWOHUStyoeErtffLdHFy55rlzb7OzdD06uBnALBVanYbktHqCzx-pkUk7YQztdn-n1CYmyN72C_ljx2JBGVjcefgouu6L2t7T-aEtjNdLQEbMa6boRtYG2YimpH-916Q9_hX3xxnQuiOH4esmZTdAhdDUyni9LId-RiOpMUzLhqvWxXSctru0fJltZz-46s=s600",
+      "kind": "product-image",
+      "bytes": 29502,
+      "sha256": "8101e1337debb4b8a3ae5370057607688757d2f442fb015e3ef0e23e58eba3e4",
+      "contentType": "image/jpeg",
+      "width": 448,
+      "height": 600
+    },
+    {
+      "path": "public/images/products/hoodie-graphite-side.jpg",
+      "sourceUrl": "https://lh3.googleusercontent.com/aida/ALJJyrD9fGkwB6upNKUSGppx87rRbmYPrlJP7Yz9HreEsbNuughEVk7TByQPP-G-jKSbWOkB7PXhx1fgw2JFJ2Wv-PHl4dEbNfRYnxGUOhXZYO_WbPa13YosLz0xiFGIbZl1en_BBlvFkpnXZPaUsRC_PTPN3RA1D98MF6PaEGjr_UPBnCsX9p9gYnf0uEivy39I-AG7hq_Y_D0dgPfyvIrmnBUjC6UmtKyo9es1KTLWRtUPm6VY4NSzeNuVsQI=s600",
+      "kind": "product-image",
+      "bytes": 29098,
+      "sha256": "d085d5ae4ec04c5fc433e1a019e2035b0805e2ed7f58403d6f8076e782cda400",
+      "contentType": "image/jpeg",
+      "width": 448,
+      "height": 600
+    },
+    {
+      "path": "public/images/products/coord-slate-side.jpg",
+      "sourceUrl": "https://lh3.googleusercontent.com/aida/ALJJyrA1d83sve6EO4Td2qvTXe3eC2xAcRkctjIrsUecdo80A5SeMgZgjKu6zkJ-jl5gx3gaXK8aw2vDeYy7r4YErjYaZj9j8yiPtOfjnhGt2ouZrAuuPpUneRrZimBpFLIbwEY_gF0n7gqdIU0VWfajl4JDNKe6w4Cm-YNynaL8WNloqOUHi9jy4V_ceu53LzU3d8dLE51_ago9QhCnCLmlJzA6xUI_XDKfhjKn7C-Cx_TtCFenHRa4PA_QZ74=s600",
+      "kind": "product-image",
+      "bytes": 30927,
+      "sha256": "d3a7e261d8ca5560f62550aeec3ed1b170f39e7338ed9b9b5d71eb33c6c13787",
+      "contentType": "image/jpeg",
+      "width": 448,
+      "height": 600
+    },
+    {
+      "path": "public/images/products/oversized-tee-chalk-side.jpg",
+      "sourceUrl": "https://lh3.googleusercontent.com/aida/ALJJyrDUcKnxXaqNyVjalLBR6qtYl3ETAy1vsfKEyVF0ubOnuFkihJCZB4ofkjngUk4IvYyhu04_81FTdSNG1kVMRsFyy_SJrnFV9svI15HxWRiMn7m9rkOxaVGmtrKoiB0KikaCAbx3K--Ja0CyHKQIkVnjdpADqHPX-Gn4dUUIxD2U9_dNmkooVGf4HCR-IJtTdpVCTBzlanCHw3kW551vyEJdRhmiyVMReSuborXMEAtUiL1OLh08j-hr8DU=s600",
+      "kind": "product-image",
+      "bytes": 22322,
+      "sha256": "1e1ee5db0c52d6f657269033c7a56bd7ab608a7b8c8bb51423af53911d65abb6",
+      "contentType": "image/jpeg",
+      "width": 448,
+      "height": 600
+    },
+    {
+      "path": "public/images/shared/logos/offhour-watch-hands-reference.png",
+      "sourceUrl": "https://lh3.googleusercontent.com/aida/ALJJyrA05K0xelNB63-oWZkCIX2k7OKF49rX8LHRfpYT7m4tHOEl2MvAVhivqdzolc9PUeDF30EeSPJ4GB7HU1u30zdtP0YjwsJt--kx_ISqOxxesSUe6k6OmYvpdCBkxOLTv7-9BUNzjBl7xiNwqHI_b6t45d4P04UcSfDXyCzJRJznRZbGEefUEyxHVbhIUUFzg3UofNdw6QER5DD6p0JS_QxYoxD7StBqZ62YeXk9-kZP63fEJcVjXy9cUMo=s800",
+      "kind": "logo-reference",
+      "bytes": 41312,
+      "sha256": "349083a57ca9a01ed0713852394e656123644ebdfa96ad9d1364e40960c83e24",
+      "contentType": "image/png",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "path": "public/images/products/hoodie-graphite-premium-front.jpg",
+      "sourceUrl": "https://lh3.googleusercontent.com/aida/ALJJyrDa_Shee1YOquyemKyDN6HBoSWORQiHNcoipZnGXxUMfb6AjmvQiXyPVhBa3RIRcs4_nEQUV5RPKncGTveg-wYfGpcS66rwq2Fi_2zOIdMhHrcWxlLVWH24QroPh2S_AVQaH45X_NEh26fP068Rsm4lTGpbi-yunMbdO2AYama-TE1y3tWFzXuVWxmxN7IuMJZcCbs0nTF96B79KRIBfOjHy8N32AlfWyOtdzgkIoaIsIaNcD4TILeSddo=s512",
+      "kind": "product-image",
+      "bytes": 32321,
+      "sha256": "e375b3d325ec0236d152d3df7915243d7a2564398404e52b15de1ab5c0e950a1",
+      "contentType": "image/jpeg",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "path": "public/images/products/hoodie-stone-front.jpg",
+      "sourceUrl": "https://lh3.googleusercontent.com/aida/ALJJyrCOjIQoeMWQNy1lJSBGmkWFq7ef3iHdM6H6Q11-wa4HRRvikeNst3VHH4A8CXN7VaVMH1JdMksm9aIuTy9yYL813Mr2ENz02e5JkkPuwkdVy0yXuOCJ_GWCmEEq39xnlrpOWSUByjH8BGLi6kdQt8OZ96jxKzFKKKU9GVbv_pO3xoCKXMSlovd6aQpgDKc4_ou70OK0DLrUsg_0OjB7cgEmGAjz17Gl9UD1J2KGJlKKSliTDoj_MooMw4o=s600",
+      "kind": "product-image",
+      "bytes": 42744,
+      "sha256": "68dc1da2374c5e0d8f0c07f756044ac7d4b857265e1cb7e2944638fc5f4d2ed5",
+      "contentType": "image/jpeg",
+      "width": 448,
+      "height": 600
+    },
+    {
+      "path": "public/images/products/references/trousers-charcoal-side.jpg",
+      "sourceUrl": "https://lh3.googleusercontent.com/aida/ALJJyrBEmyGS5U3NGZxiuHlb887C7cORnNjqR4GO84WFvKbZgKyeShAlH7BPmY_JxEXySmwbRQljzBOSQLTSV17Eq1NdQM-gZf-UnNMEStEjgAQnwaWwYy0_QxrknYSLYuLcpgWLyh0VFXJ0f4LV7x2KVVrsYKvqfLRU_kYaXGuA69W6DAg_05BWX0hnhPJi8pMVf1F2f0wLMzerEHOeQRS3GsbvHF5N3J45HvlzY7vwDcVsBkAHpkYATiKNqxM=s600",
+      "kind": "product-image",
+      "bytes": 30160,
+      "sha256": "9554fa74c3be03a9bc0519ce2843e1fe98a18ee55e402e113219f474ed3e7e7c",
+      "contentType": "image/jpeg",
+      "width": 448,
+      "height": 600
+    },
+    {
+      "path": "public/images/products/hoodie-graphite-front-alternate.jpg",
+      "sourceUrl": "https://lh3.googleusercontent.com/aida/ALJJyrDg9tZgdFlRndxJ5ouZ19Snz_Wrq8PqsvazlxGJSxcbNiw92P2-E2VZZ2Z4JauIBesies16mUNc3cmnlo_RVfmOVnxXtMiB6t28851g1r7HRDi35SfxTaJH5Ay2jVtd6sfTa9r1RkppMXCqHu89o_5IvK8GQZLZpn9IubwDhhss6h7uwkcv0JrKOaIODH0WEgnsNf_BCqxdVzkZul-loEcRbuO_V7jHsjy96svAgWaAm-pWSAmLxzplwGU=s600",
+      "kind": "product-image",
+      "bytes": 33320,
+      "sha256": "316213fed1730f7702db6c56f9af560405b6163ec573c110b8faa770485b036e",
+      "contentType": "image/jpeg",
+      "width": 448,
+      "height": 600
+    },
+    {
+      "path": "public/images/shared/logos/offhour-dual-orbit-reference.png",
+      "sourceUrl": "https://lh3.googleusercontent.com/aida/ALJJyrBrP2BpiYk5PiiIATz90LnRFS_l0sNl79yKMwKKWGpIHWOdVm8qqTduXBudqoVBlKO_9vdJkUZ6sV22AuFyQFClfMVS20xQamsGQE8G5d7VxEQ2BY2gegmzOi5IcDK-QPxdagcfUuMfYDx5yj5OOJMttiKGHklTNd8jTxxwoMnoRCXxIC8wB_jOA5r3I7Xy_etcPe2Uc9QoP5moxwB9BUiOtBqpkCfMcTIxAeD2HTUvYhwtIulLitvuAcM=s200",
+      "kind": "logo-reference",
+      "bytes": 7780,
+      "sha256": "0e08e9c9cf8f7d0413593a5359c4dc84f757761529a8bd593a13152f93077b76",
+      "contentType": "image/png",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "path": "public/images/shared/logos/offhour-clock-mark.svg",
+      "sourceUrl": "https://stitch.google.com/projects/1272478663952991774",
+      "kind": "svg",
+      "bytes": 265,
+      "sha256": "c945a7269d4d13721a46b08b558eb2f3bd0c1b255b55c412e7e1438398f1e235",
+      "contentType": "image/svg+xml",
+      "notes": "Extracted original rendered design SVG; root namespace/viewBox/color/classes normalized for standalone use. Internal animation styles preserved.",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "path": "public/images/shared/logos/google-sign-in.svg",
+      "sourceUrl": "https://stitch.google.com/projects/1272478663952991774",
+      "kind": "svg",
+      "bytes": 728,
+      "sha256": "0c55e450d39f81d4c2145d2b98af6490405194de564c2bc2326da892e1841d78",
+      "contentType": "image/svg+xml",
+      "notes": "Extracted original rendered design SVG; root namespace/viewBox/color/classes normalized for standalone use. Internal animation styles preserved.",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "path": "public/images/shared/logos/offhour-dial-animated.svg",
+      "sourceUrl": "https://stitch.google.com/projects/1272478663952991774",
+      "kind": "svg",
+      "bytes": 2251,
+      "sha256": "7159d7edf5954e2156337e3d9eeb5080523c2a72d9edcb243ce02168aec25541",
+      "contentType": "image/svg+xml",
+      "notes": "Extracted original rendered design SVG; root namespace/viewBox/color/classes normalized for standalone use. Internal animation styles preserved.",
+      "width": 160,
+      "height": 160
+    },
+    {
+      "path": "public/images/shared/logos/offhour-dial-standalone-animated.svg",
+      "sourceUrl": "https://stitch.google.com/projects/1272478663952991774",
+      "kind": "svg",
+      "bytes": 3594,
+      "sha256": "32d45c2b019ae9743a024493e344f3c382e9bcc60436395aa101cd2c686e2bad",
+      "contentType": "image/svg+xml",
+      "notes": "Extracted original rendered design SVG; root namespace/viewBox/color/classes normalized for standalone use. Internal animation styles preserved.",
+      "width": 200,
+      "height": 200
+    }
+  ],
+  "failures": [],
+  "notes": [
+    "Original observed image URLs preserved without increasing resolution or replacing assets.",
+    "Trousers retained as a design reference, outside the agreed launch categories.",
+    "Wordmark reference is a low-resolution raster; no vector wordmark was present in the observed design.",
+    "Images retain original studio backgrounds; no cutout editing was performed.",
+    "Animation accessibility and final brand selection require UI implementation review."
+  ]
+}

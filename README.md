@@ -33,7 +33,8 @@ For browser tests, install Chromium once with `npx playwright install chromium`.
 
 ```text
 docs/                         PRD, database/API designs, status tracker
-public/images/products/       Product assets; currently empty
+public/images/products/       Imported Stitch garment images
+public/images/shared/logos/   Logo references and shared SVGs
 scripts/db/                   Reserved for migrations, indexes, and seeds
 src/
   app/
@@ -74,7 +75,7 @@ Route groups organize code without changing URLs. Placeholder account/checkout p
 - Theme switching/persistence and accessible dialog primitives are not implemented.
 - MongoDB client is prepared but has not been connected or tested against Atlas.
 - Better Auth, Razorpay, email, stock, jobs, and actual catalog are not connected.
-- Homepage is a temporary text/layout placeholder, not the approved clothing-rail design.
+- Homepage is a temporary text/layout placeholder, not the approved clothing-rail design. Imported assets and their limitations are listed in [docs/assets.md](./docs/assets.md).
 - Prototype indexing is disabled through metadata and response headers.
 - No deployment has been created.
 
