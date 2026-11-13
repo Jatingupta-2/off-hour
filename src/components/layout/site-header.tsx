@@ -1,31 +1,41 @@
 import Link from "next/link";
-import { ShoppingBag, UserRound } from "lucide-react";
+import Image from "next/image";
+import { ShoppingBag } from "lucide-react";
 
 export function SiteHeader() {
   return (
-    <header className="flex items-center justify-between gap-6 px-6 py-7 md:px-14">
-      <Link
-        href="/"
-        aria-label="OFFHOUR home"
-        className="text-xl font-bold tracking-[-0.07em]"
-      >
-        OFFHOUR
-      </Link>
-      <nav
-        aria-label="Main navigation"
-        className="flex items-center gap-5 text-sm md:gap-8"
-      >
-        <Link href="/shop" className="hover:underline underline-offset-4">
-          Shop
+    <header className="site-header">
+      <div className="header-start">
+        <Link href="/" aria-label="OFFHOUR home" className="brand">
+          <picture>
+            <source
+              media="(prefers-reduced-motion: reduce)"
+              srcSet="/images/shared/logos/offhour-watch-hands-reference.png"
+            />
+            <Image
+              src="/images/shared/logos/offhour-dial-animated.svg"
+              alt=""
+              width={34}
+              height={34}
+            />
+          </picture>
+          <span className="brand-wordmark">OFFHOUR</span>
         </Link>
-        <Link href="/about" className="hover:underline underline-offset-4">
-          About
+        <nav aria-label="Main navigation" className="header-links">
+          <Link href="/shop" className="header-link">
+            Shop
+          </Link>
+          <Link href="/about" className="header-link">
+            About
+          </Link>
+        </nav>
+      </div>
+      <nav aria-label="Customer navigation" className="header-actions">
+        <Link href="/login" className="header-link">
+          Account
         </Link>
-        <Link href="/login" aria-label="Account" className="p-2">
-          <UserRound size={18} strokeWidth={1.5} aria-hidden="true" />
-        </Link>
-        <Link href="/bag" aria-label="Shopping bag" className="p-2">
-          <ShoppingBag size={18} strokeWidth={1.5} aria-hidden="true" />
+        <Link href="/bag" aria-label="Shopping bag" className="header-link">
+          Bag <ShoppingBag size={14} strokeWidth={1.2} aria-hidden="true" />
         </Link>
       </nav>
     </header>

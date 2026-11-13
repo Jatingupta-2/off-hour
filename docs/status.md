@@ -1,7 +1,7 @@
 # OFFHOUR — Development Status
 
-**Last updated:** 11 November 2026  
-**Current phase:** Application scaffold implemented; storefront features and external integrations are not connected.
+**Last updated:** 13 November 2026
+**Current phase:** First desktop homepage rail implemented locally for review; external integrations and product details remain unconnected.
 
 ## How to maintain this tracker
 
@@ -11,6 +11,8 @@
 - Record meaningful milestones in the progress log with validation and any remaining limits.
 - Do not mark integrations complete because a placeholder, mocked response, or environment variable exists. Label simulations clearly.
 - Keep deferred work separate from version 1. Unchecked design/tooling proposals are not finalized implementation decisions.
+- Do not push or merge new work until the user explicitly approves the reviewed changes. Local feature branches are allowed.
+- Work in batches of at most two or three concrete steps. State the batch first, verify and report its results, then wait for the user's explicit go-ahead before the next batch. See `AGENTS.md` for the full checkpoint and branch rules.
 
 ## Scope and source documents
 
@@ -41,6 +43,9 @@ The latest homepage direction supersedes the earlier multi-section concept: a mi
 ## 2. Application foundation
 
 - [x] Initialize Git on `main` and configure `origin` as `https://github.com/Jatingupta-2/off-hour.git`.
+- [x] Establish `dev` integration branch and document feature/fix/chore branch workflow in `AGENTS.md`.
+- [x] Document incremental development batches and mandatory user checkpoints after two or three steps.
+- [ ] Add automated CI and GitHub branch protection if requested; the branch workflow is currently procedural.
 - [ ] Create the Next.js App Router and TypeScript scaffold.
   - [x] Initialize runnable app, lockfile, shared layout, and placeholder pages.
   - [x] Add lazy validated database configuration and `.env.example`; integration-specific validation remains pending.
@@ -65,26 +70,51 @@ The latest homepage direction supersedes the earlier multi-section concept: a mi
   - [ ] Keyboard focus, accessible labels, contrast, and reduced-motion support.
 - [ ] Implement shared navigation.
   - [x] OFFHOUR wordmark, Shop/About links, account and bag controls.
+  - [x] Keep Shop/About visible in a second header row on narrow screens.
   - [ ] Bag count and active navigation behavior.
   - [ ] Quiet footer and policy/support navigation where appropriate.
   - [ ] Theme control in an unobtrusive location without cluttering the homepage.
 
 ## 4. Minimal desktop homepage and clothing rail
 
+- [x] Import the available Stitch source assets without implementing the UI.
+  - [x] Separate garment images in `public/images/products/` from common brand assets in `public/images/shared/logos/`.
+  - [x] Save nine garment images (including one out-of-scope trousers reference), three raster logo references, and four original SVGs.
+  - [x] Verify image decoding, SVG XML/safety, file hashes, dimensions, and visual mapping; document sources in `docs/asset-manifest.json` and limits in `docs/assets.md`.
+  - [ ] Prepare matching front/side cutouts for missing garment views and a sharp vector wordmark before final rail integration.
 - [ ] Build the approved desktop homepage.
-  - [ ] Near-single-viewport composition with generous empty space.
-  - [ ] Compact header, tagline, subtle interaction guidance, and minimal footer.
-  - [ ] No additional product grid, promotional cards, newsletter, or editorial sections.
+  - [x] Adapt the Stitch source into local Next.js components with self-hosted fonts.
+  - [ ] Obtain user review of the desktop implementation before pushing or merging.
+  - [x] Near-single-viewport composition with generous empty space.
+  - [x] Compact header, tagline, subtle interaction guidance, and minimal footer.
+  - [x] No additional product grid, promotional cards, newsletter, or editorial sections.
 - [ ] Create the interactive clothing rail.
-  - [ ] Full-width brushed-metal rail with consistent hangers.
-  - [ ] Five or six realistic neutral garments, hanging sideways at rest.
+  - [x] Verify reference-style brass lights at 55% opacity, softer beams, and interlocking chain rail supports.
+  - [x] Verify visible corner spotlight fixtures aligned with the beams and rail suspension cables reaching the page top.
+  - [x] Deepen the warm greige backdrop and widen both spotlights with warm amber/champagne tones.
+  - [x] Verify the deeper warm grey backdrop and upper-left/right spotlights aimed across the clothes.
+  - [x] Verify thin silver hooks in all 26 garment views while preserving dark frames and the wooden rail.
+  - [x] Apply the approved flat gunmetal hangers to all 26 front/side views and replace the thin metal rail with a broader 12px walnut rail.
+  - [x] Implement distinct front/side views for all thirteen garments, with a reversible 90-degree hover/focus turn and gentle hanger settling.
+  - [x] Add image error fallback, direct product links, accessible labels, and stable image slots.
+  - [ ] Complete user review of paired-view fidelity; all thirteen garments now have transparent front/side prototype assets.
+  - [x] Match right-hand resting angles and hanger heights to the left; hide the co-ord source rail in resting and expanded views.
+  - [x] Remove backgrounds from graphite and stone hoodies; hang their transparent cutouts directly on the rail in resting and expanded states.
+  - [x] Remove backgrounds and source rods from tee front/side, linen side, and co-ord side; align their hooks directly with the rail and preserve both co-ord pieces.
+  - [x] Remove the stone Studio Hoodie from the homepage rail; retain the front-facing graphite hoodie.
+  - [x] Add six colour variants (olive, espresso, clay, navy, burgundy, grey marl) and flexible rail spacing for ten selectable items.
+  - [x] Full-width warm walnut rail with consistent approved flat gunmetal hangers.
+  - [x] Thirteen transparent garments and colour variants fill the desktop rail; surrounding garments show dedicated side views at rest.
+  - [x] Add white, black, and baby pink linen shirts with paired front/side cutouts and hover rotation.
   - [ ] Source/create consistent garment front and angled assets; validate rendering approach.
   - [ ] Hover reveals the full front silhouette without cropping.
-  - [ ] Neighbouring garments move aside; hovered garment settles naturally.
-  - [ ] Show selected product name and price only.
-  - [ ] Pointer leave restores sideways position.
-  - [ ] Single click opens the correct product page.
-  - [ ] Keyboard focus/activation equivalents and reduced-motion behavior.
+  - [x] Neighbouring garments move aside; hovered garment settles naturally.
+  - [x] Show selected product name and price only.
+  - [x] Pointer leave restores surrounding garments to their side views; the graphite hoodie returns front-facing when idle.
+  - [x] Show the graphite hoodie front-facing by default; turn it sideways and narrow its slot when another garment is hovered/focused, then restore it when idle.
+  - [x] Single click opens the correct product page.
+  - [x] Keyboard focus/activation equivalents and reduced-motion behavior.
+  - [x] Preserve garment selection when moving by pointer or keyboard into its details link.
   - [ ] Asset-loading fallback, stable layout, and performance review.
 
 ## 5. Database and sample catalog
@@ -318,18 +348,42 @@ Separate native Android/iPhone apps, a multi-brand marketplace, and internationa
 
 ## Progress log
 
-| Date       | Completed work                                                                                                                        | Validation / limits                                                                                                                          |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2026-11-11 | Established tracker; moved PRD, database design, and API design into `docs/`                                                          | Documentation only. Existing relative document links preserved. Application code and integrations have not been implemented.                 |
-| 2026-11-11 | Created Next.js scaffold, feature boundaries, placeholder routes, shared layout, server-only DB helper, API helpers, and test tooling | Lint and typecheck passed; 3 validation tests and 2 Playwright smoke tests passed; production build passed. Integrations remain unconnected. |
+| Date       | Completed work                                                                                                                                                             | Validation / limits                                                                                                                                                                                              |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-11-11 | Established tracker; moved PRD, database design, and API design into `docs/`                                                                                               | Documentation only. Existing relative document links preserved. Application code and integrations have not been implemented.                                                                                     |
+| 2026-11-11 | Created Next.js scaffold, feature boundaries, placeholder routes, shared layout, server-only DB helper, API helpers, and test tooling                                      | Lint and typecheck passed; 3 validation tests and 2 Playwright smoke tests passed; production build passed. Integrations remain unconnected.                                                                     |
+| 2026-11-11 | Documented development batches of two or three steps and explicit user checkpoints in AGENTS.md                                                                            | Documentation only; no application features changed.                                                                                                                                                             |
+| 2026-11-11 | Imported Stitch garment images, raster logo references, and original SVG assets into separate public folders                                                               | All 16 files decode; SVGs parse and contain no scripts/external links. Visually reviewed; source/hash/dimension manifest saved. No UI changes.                                                                   |
+| 2026-11-11 | Built first desktop homepage batch: Stitch layout, five-piece rail, hover/focus view transitions, direct links, and reduced motion; added explicit review-before-push rule | Lint, typecheck, production build, 3 unit tests and 6 browser tests passed. Desktop visually reviewed. Local on feature/homepage-rail; no commit, push, or merge. Missing garment fronts/cutouts remain tracked. |
+| 2026-11-11 | Kept the central graphite hoodie permanently expanded and front-facing while other garments remain interactive                                                             | Lint, typecheck, production build, 3 unit tests, and 6 browser tests passed against an isolated production server. Changes remain local for review.                                                              |
+| 2026-11-11 | Aligned the right-hand garments with the left: consistent resting angle/width, raised co-ord hangers, and masked its source rail | Production build and 6 browser tests passed; lint passed. Resting and hover screenshots visually checked. Local only; no commit, push, or merge. |
+| 2026-11-11 | Added transparent graphite front/side and stone front hoodie cutouts; aligned their photographed hooks directly to the rail | Alpha channels verified; resting and hover screenshots visually checked. Lint, production build, and 6 browser tests passed. Changes remain local for review. |
+| 2026-11-11 | Converted all remaining rail views to transparent cutouts; removed source rods and aligned photographed hooks | Four PNG alpha channels verified. Resting and tee/linen/co-ord hover screenshots reviewed. Lint, production build, and 6 browser tests passed. Local only, awaiting review. |
+| 2026-11-11 | Removed stone Studio Hoodie from the homepage rail; four garments remain with graphite hoodie front-facing | Production build and all 6 browser tests passed. Existing image assets retained. Changes local, with no commit, push, or merge. |
+| 2026-11-11 | Added six transparent colour variants and filled the rail with ten garments; flexible slots open on hover while graphite stays front-facing | Six alpha PNGs verified and source prompts/hashes recorded. Production build, lint, and 6 browser tests passed. All ten hovered within the 1280px viewport; 1280px and 900px screenshots reviewed. Local only, no commit/push/merge. |
+| 2026-11-11 | Completed front/side pairs for all ten rail items; added reversible side-to-front rotation and hanger settling | Eight PNG alpha channels and contact sheet checked. Production build, lint, and 7 browser tests passed, including all nine surrounding garments switching/resetting. Resting, mid-turn, and front screenshots reviewed. Local only; no commit/push/merge. |
+| 2026-11-11 | Updated graphite centrepiece to turn sideways and narrow when another item is hovered or focused; idle restores its front view | Production build passed; browser checks verify hover/focus switching and restoration. Temporary documentation helper removed from lint scope. Local only, no commit/push/merge. |
+| 2026-11-11 | Added white, black, and baby pink linen shirts with six transparent paired assets; thirteen garments now on the rail | Alpha channels/contact sheet verified; all three hover fronts visually reviewed. Production build, lint, and all 7 browser tests passed, covering 13 image pairs and 26 loaded images. Local only; no commit/push/merge. |
+| 2026-11-11 | Applied the approved flat gunmetal hanger design to all 26 views and added a thicker, wider walnut rail with subtle wood grain | All new PNGs decode with transparent alpha; one white-shirt backdrop corrected. Contact sheet and resting/pink/co-ord hover screenshots reviewed. Production build, lint, and all 7 browser tests passed. Changes local only; no commit/push/merge. |
+| 2026-11-13 | Applied thin light brushed silver hooks and stems to all 26 front/side views, retaining dark hanger frames and the wooden rail | Alpha channels and full contact sheet verified; resting, pink-shirt and co-ord hover screenshots reviewed. Production build, lint, and all 7 browser tests passed. Changes remain local, no commit/push/merge. |
+| 2026-11-13 | Darkened the default warm grey backdrop and added soft upper-left/right spotlight beams behind the clothes; adjusted muted text/border tones | Resting and hover screenshots visually reviewed. Decorative CSS layers are static and ignore pointer input. Production build, lint, and all 7 browser tests passed. Changes local only; no commit/push/merge. |
+| 2026-11-13 | Deepened the default backdrop and widened corner light cones from 48 to 74 degrees with warm amber tones and softer feathering | Resting/hover screenshots visually reviewed. Production build, lint, and all 7 browser tests passed. Changes local only; no commit/push/merge. |
+| 2026-11-13 | Added mirrored spotlight photographs at the beam sources and extended the two rail cables to the top page edge | Transparent fixture asset verified; resting/hover views and cable bounds checked. Header controls remain clear and horizontal overflow was fixed. Production build, lint, and all 7 browser tests passed. Local only; no commit/push/merge. |
+| 2026-11-13 | Replaced corner fixtures with the supplied brass spotlight style, reduced fixture/beam opacity, and changed rail cables to repeating linked metal chains | Transparent PNG and native SVG verified; resting/hover views reviewed; chains reach the page top. Production build, lint, and all 7 browser tests passed. Changes local only; no commit/push/merge. |
+
+| 2026-11-13 | Fixed selection retention between the rail and details link for pointer/keyboard users; kept Shop/About visible in a second header row on narrow screens | Lint, typecheck, 3 unit tests, production build, and all 10 browser tests passed. Browser tests used an isolated production server on port 3001 because the existing dev server occupies port 3000. Navigation checked at 320px and 700px. Mobile rail redesign remains deferred. Changes local on feature/homepage-rail; no commit/push/merge. |
 
 ## Scaffold verification notes
+
+- 13 November 2026: User approved committing and pushing the reviewed homepage rail changes to `feature/homepage-rail`. Integration into `dev` and promotion to `main` remain pending separate authorization.
+
+- 13 November 2026 verification: lint/typecheck and all 3 unit tests passed; all 10 browser tests passed against the existing localhost:3000 development server. Additional Chromium checks passed for all 13 garment click/product-placeholder/return-home paths, homepage reload, 14 implemented page routes, and an unknown-route 404; no uncaught browser errors were observed during the route sweep. Existing Chrome manual testing remained blocked by screenshot timeouts, unavailable input geometry, and concurrent-input rejection; only its homepage accessibility state was inspected, so this is not a completed manual visual review. Authentication, catalog, bag, checkout, and order pages remain explicit scaffolds.
 
 - npm package manager, Node.js 24, Next.js App Router, TypeScript, Tailwind CSS, Zod, and MongoDB driver installed with exact dependency versions and a lockfile.
 - Shared layout and placeholder routes work without credentials. Only the health endpoint is implemented; auth/commerce/webhook/job API folders are reserved, not functioning endpoints.
 - Theme tokens exist; switching/persistence and accessible dialog primitives remain pending.
 - MongoDB helper is server-only and lazy; no Atlas connection or migrations have been performed.
-- The homepage is a temporary shell, not the clothing-rail implementation. No garment assets or fake working login/payment controls were added.
+- The homepage has a first desktop rail implementation awaiting review. Product pages, login, and payment functionality remain placeholders. See `docs/homepage.md` for asset/animation limits.
 - Dependency audit reports moderate findings in development lint tooling; no forced incompatible overrides were applied. Revisit when compatible upstream fixes are available.
 
 - Verification complete: lint, typecheck, production build, three unit tests, and two Chromium smoke tests passed. Production dependency audit found zero vulnerabilities; development lint-tooling findings remain documented.
