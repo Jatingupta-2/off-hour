@@ -7,7 +7,7 @@ test("the shell navigates without pretending checkout is implemented", async ({
   await expect(
     page.getByRole("heading", { name: "Wear your own time." }),
   ).toBeVisible();
-  await page.getByRole("link", { name: "Explore the shop" }).click();
+  await page.getByRole("link", { name: "Shop", exact: true }).click();
   await expect(
     page.getByRole("heading", { name: "The collection." }),
   ).toBeVisible();
