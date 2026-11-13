@@ -75,7 +75,7 @@ Route groups organize code without changing URLs. Placeholder account/checkout p
 - Theme switching/persistence and accessible dialog primitives are not implemented.
 - MongoDB client is prepared but has not been connected or tested against Atlas.
 - Better Auth, Razorpay, email, stock, jobs, and actual catalog are not connected.
-- Homepage is a temporary text/layout placeholder, not the approved clothing-rail design. Imported assets and their limitations are listed in [docs/assets.md](./docs/assets.md).
+- Homepage now has a first desktop rail implementation based on Stitch: hover/focus selection, animated view changes, direct product links, and reduced-motion behavior. Product detail destinations remain scaffold pages. See [docs/homepage.md](./docs/homepage.md) for asset limitations and the current review scope.
 - Prototype indexing is disabled through metadata and response headers.
 - No deployment has been created.
 

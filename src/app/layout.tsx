@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
+import "@fontsource-variable/space-grotesk";
+import "@fontsource-variable/plus-jakarta-sans";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: { default: "OFFHOUR — Wear your own time.", template: "%s | OFFHOUR" },
   description:
-    "The foundation for OFFHOUR. Premium minimal clothing, made for your own time.",
+    "Explore OFFHOUR's wardrobe of minimal streetwear. Find your own rhythm. Wear your own time.",
   robots: { index: false, follow: false },
 };
 
